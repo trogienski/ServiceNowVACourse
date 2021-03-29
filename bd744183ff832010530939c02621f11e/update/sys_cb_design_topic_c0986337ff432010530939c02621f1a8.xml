@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Update NeedIt Records">88986337ff432010530939c02621f1a5</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"a131ef61145644a4b836a94d6a777181","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"a131ef61145644a4b836a94d6a777181"}],"goals":[{"name":"primary","trigger_id":"a131ef61145644a4b836a94d6a777181","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"I can help you find and update NeedIt records for a type of request.\", vaContext.getRequesterLang())"},"id":"8b0736f6468040e1b2ef0141aa1d09b6","name":"Start"},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Ask again when you need to update other NeedIt records.\", vaContext.getRequesterLang())"},"id":"6efdb6896926497fbe3388ad58979686","name":"End"},{"type":"ChoiceInputPrompt","expression_mode":"simple","id":"9eee24a907854ee3ba84febe8cb1a81b","name":"NeedIt Type","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"9e2d02551fdc4c569df7f7f977b26636","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which type of NeedIt record would you like to view?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true}}],"edges":[{"type":"Edge","source_node_id":"8b0736f6468040e1b2ef0141aa1d09b6","target_node_id":"9eee24a907854ee3ba84febe8cb1a81b","id":"6751a03b55494f279c57efabb7ea9aae"},{"type":"Edge","source_node_id":"9eee24a907854ee3ba84febe8cb1a81b","target_node_id":"6efdb6896926497fbe3388ad58979686","id":"6e9408bb59e84db8870221b279706591"}],"id":"primary"}],"script_variables":[{"type":"String","name":"LiveAgent_application","value":{"type":"String","mode":"string"},"id":"46d8cc0915064f5abed0d71480cdb406","formatType":"text","secure":false,"sensitive":false}],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false},{"type":"Choice","choices":[{"name":"Legal","element":"legal"},{"name":"Facilities","element":"facilities"},{"name":"Human Resources","element":"human resources"}],"id":"9e2d02551fdc4c569df7f7f977b26636","name":"needit_type","formatType":"text","secure":false,"sensitive":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"bd744183ff832010530939c02621f11e","domain":"global","topic_type":"STANDARD","channels":[],"id":"3fd64983ff832010530939c02621f180","name":"_PRVW__0498633788432010b956cc20e3508da0","key_phrases":["Update NeedIt Records","NeedIt Request"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"design_categories":[],"triggerable_by_notification":false,"auto_resolution_enabled":false,"library":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>3fd64983ff832010530939c02621f180</design_topic_id>
+        <name>_PRVW__0498633788432010b956cc20e3508da0</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>thomas.rogienski</sys_created_by>
+        <sys_created_on>2021-03-29 15:02:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c0986337ff432010530939c02621f1a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt Virtual Agent Conversations" source="x_587062_needit_vi">bd744183ff832010530939c02621f11e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt Virtual Agent Conversations">bd744183ff832010530939c02621f11e</sys_scope>
+        <sys_update_name>sys_cb_design_topic_c0986337ff432010530939c02621f1a8</sys_update_name>
+        <sys_updated_by>thomas.rogienski</sys_updated_by>
+        <sys_updated_on>2021-03-29 15:02:26</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
